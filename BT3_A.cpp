@@ -1,7 +1,7 @@
 /*
 Ho Ten: Phung Huu Phuoc Toai
 MSSV: 20183639
-Bai tap so 3-phan B
+Bai tap so 3-phan A
 Lang: C++
 */
 #include <bits/stdc++.h>
@@ -24,11 +24,11 @@ int lienthong = 0;
 
 typedef struct graph data_type;
 data_type a[max];
+queue<data_type> que;
 
 void LienThongBFS(data_type &temp)
 {
     data_type pq;
-    queue<data_type> que;
     que.push(temp);
     temp.LT = lienthong;
     while (!que.empty())
