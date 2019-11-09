@@ -11,7 +11,7 @@ Bai tap so 1: Tree compression
 using namespace std;
 
 int n;
-int a[MAX][2] = {0};
+int a[MAX][2] = {0}; // a[i][0] dung de luu tru deg(i)
 
 int main(){
     ifstream cin("data.in");
