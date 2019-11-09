@@ -24,11 +24,11 @@ data_type a[max];
 int b[max][max] = {0};
 int lienthong = 0;
 vector<int> que;
+queue<data_type> que2;
 
 void BFS(data_type &temp)
 {
     data_type pq;
-    queue<data_type> que2;
     que2.push(temp);
     temp.LT = 1;
     while (!que2.empty())
@@ -148,7 +148,7 @@ int main()
     if (check == 1)
         cout << "khong tim thay u!\n";
     cout << endl;
-    cout << "3. tim duong di u toi v bang bfs\n";
+    cout << "3. tim duong di ngan nhat tu u toi v bang bfs\n";
     cout << "nhap u va v: ";
     cin >> u >> v;
     check = 1;
@@ -188,4 +188,5 @@ int main()
             }
         }
     }
+    cout << endl;
 }
